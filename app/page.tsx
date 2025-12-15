@@ -9,11 +9,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: "https://www.louissimon.dev" },
+    alternates: { canonical: "https://www.louis-simon.dev" },
     openGraph: {
       title,
       description,
-      url: "https://www.louissimon.dev",
+      url: "https://www.louis-simon.dev",
       type: "website",
       locale: "fr_FR",
       siteName: "Louis Simon | Freelance Next.js",

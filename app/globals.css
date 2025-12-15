@@ -15,7 +15,7 @@ body {
 }
 
 .card {
-  @apply rounded-2xl border border-white/5 bg-card/80 backdrop-blur-xl shadow-glow transition hover:-translate-y-1 hover:shadow-xl hover:shadow-glow/80;
+  @apply rounded-2xl border border-white/5 bg-card/80 backdrop-blur-xl shadow-glow transition hover:-translate-y-1 hover:shadow-xl hover:shadow-glow;
 }
 
 .section-title {
