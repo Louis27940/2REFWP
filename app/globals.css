@@ -10,8 +10,28 @@ body {
   @apply bg-surface text-white antialiased;
 }
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 .layout-container {
   @apply mx-auto max-w-6xl px-6;
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    @apply px-4;
+  }
+
+  .content-card {
+    @apply rounded-xl;
+  }
+
+  .section-label {
+    @apply tracking-[0.2em];
+  }
 }
 
 .content-card {
