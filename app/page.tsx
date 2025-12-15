@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { ArrowRight, Code2, Mail, MonitorSmartphone, Search, Send } from "lucide-react";
 
@@ -69,7 +70,14 @@ export default function Page() {
 
       <header className="layout-container py-10 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40" />
+          <Image
+            src="/portrait-louis.jpg"
+            alt="Portrait de Louis Simon, développeur web freelance à Caen"
+            width={48}
+            height={48}
+            className="rounded-full border border-accent/40 object-cover"
+            priority
+          />
           <div>
             <p className="text-sm text-white/60">Louis Simon</p>
             <p className="text-xs text-white/40">Développeur web freelance · Caen</p>
