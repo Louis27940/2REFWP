@@ -70,14 +70,16 @@ export default function Page() {
 
       <header className="layout-container py-10 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Image
-            src="/portrait-louis.jpg"
-            alt="Portrait de Louis Simon, développeur web freelance à Caen"
-            width={48}
-            height={48}
-            className="rounded-full border border-accent/40 object-cover"
-            priority
-          />
+          <div className="relative h-12 w-12 overflow-hidden rounded-full border border-accent/40 bg-accent/10">
+            <Image
+              src="/portrait-louis.jpg"
+              alt="Portrait de Louis Simon, développeur web freelance à Caen"
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
+          </div>
           <div>
             <p className="text-sm text-white/60">Louis Simon</p>
             <p className="text-xs text-white/40">Développeur web freelance · Caen</p>
