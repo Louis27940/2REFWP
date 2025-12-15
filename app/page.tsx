@@ -10,11 +10,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: "https://louis-simon.dev" },
+    alternates: { canonical: "https://www.louis-simon.dev" },
     openGraph: {
       title,
       description,
-      url: "https://louis-simon.dev",
+      url: "https://www.louis-simon.dev",
       type: "website",
       locale: "fr_FR",
       siteName: "Louis Simon | Freelance Next.js",
@@ -48,7 +48,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Louis Simon",
   jobTitle: "Développeur Web Freelance",
-  url: "https://louis-simon.dev",
+  url: "https://www.louis-simon.dev",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Caen",
