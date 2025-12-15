@@ -10,11 +10,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: "https://www.louis-simon.dev" },
+    alternates: { canonical: "https://louis-simon.dev" },
     openGraph: {
       title,
       description,
-      url: "https://www.louis-simon.dev",
+      url: "https://louis-simon.dev",
       type: "website",
       locale: "fr_FR",
       siteName: "Louis Simon | Freelance Next.js",
@@ -48,7 +48,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Louis Simon",
   jobTitle: "Développeur Web Freelance",
-  url: "https://www.louissimon.dev",
+  url: "https://louis-simon.dev",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Caen",
@@ -238,7 +238,7 @@ export default function Page() {
           >
             <input type="hidden" name="_subject" value="Demande devis site web - Caen" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://www.louis-simon.dev/?sent=1" />
+            <input type="hidden" name="_next" value="https://louis-simon.dev/?sent=1" />
             <label className="md:col-span-1 space-y-2 text-sm text-white/80">
               Nom
               <input

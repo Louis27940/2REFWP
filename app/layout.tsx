@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   title: "Louis Simon | Développeur Web Freelance à Caen",
   description:
     "Louis Simon, développeur web freelance à Caen, conçoit des sites rapides en Next.js, optimisés SEO et orientés conversion.",
-  metadataBase: new URL("https://www.louissimon.dev"),
+  metadataBase: new URL("https://louis-simon.dev"),
   openGraph: {
     title: "Louis Simon | Développeur Web Freelance à Caen",
     description:
       "Développeur web freelance à Caen, spécialisé Next.js et SEO pour des sites performants et orientés business.",
-    url: "https://www.louissimon.dev",
+    url: "https://louis-simon.dev",
     siteName: "Louis Simon | Freelance Next.js",
     locale: "fr_FR",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.louissimon.dev",
+    canonical: "https://louis-simon.dev",
   },
 };
 
