@@ -10,19 +10,19 @@ body {
   @apply bg-surface text-white antialiased;
 }
 
-.container-grid {
+.layout-container {
   @apply mx-auto max-w-6xl px-6;
 }
 
-.card {
+.content-card {
   @apply rounded-2xl border border-white/5 bg-card/80 backdrop-blur-xl shadow-glow transition hover:-translate-y-1 hover:shadow-xl hover:shadow-glow;
 }
 
-.section-title {
+.section-label {
   @apply text-sm uppercase tracking-[0.3em] text-white/60 mb-2;
 }
 
-.gradient-text {
+.gradient-accent-text {
   background: linear-gradient(120deg, #7dd3fc 0%, #a5b4fc 50%, #f472b6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

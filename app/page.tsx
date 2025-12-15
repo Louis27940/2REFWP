@@ -67,7 +67,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <header className="container-grid py-10 flex items-center justify-between">
+      <header className="layout-container py-10 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-10 w-10 rounded-full bg-accent/20 border border-accent/40" />
           <div>
@@ -84,10 +84,10 @@ export default function Page() {
         </a>
       </header>
 
-      <main className="container-grid space-y-16 pb-20">
+      <main className="layout-container space-y-16 pb-20">
         <section className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div className="space-y-6">
-            <p className="section-title">Développeur web · Freelance · Caen</p>
+            <p className="section-label">Développeur web · Freelance · Caen</p>
             <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
               Développeur Web Freelance à Caen, orienté résultats et performance
             </h1>
@@ -119,7 +119,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="card p-6 space-y-5">
+          <div className="content-card p-6 space-y-5">
             <div className="flex items-center justify-between">
               <p className="text-sm text-white/60">Stack orientée performance</p>
               <span className="rounded-full bg-accent/10 px-3 py-1 text-xs text-accent">Next.js · SEO · UX</span>
@@ -149,8 +149,8 @@ export default function Page() {
         </section>
 
         <section className="grid gap-10 lg:grid-cols-2">
-          <div className="card p-8 space-y-4">
-            <p className="section-title">À propos</p>
+          <div className="content-card p-8 space-y-4">
+            <p className="section-label">À propos</p>
             <h2 className="text-3xl font-semibold">
               Développeur web freelance à Caen, étudiant et passionné de produits numériques
             </h2>
@@ -159,29 +159,29 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="card p-8 space-y-6">
-            <p className="section-title">Méthode</p>
-            <div className="space-y-4 text-white/80">
-              <div>
+          <div className="content-card p-8 space-y-6">
+            <p className="section-label">Méthode</p>
+            <ol className="space-y-4 text-white/80">
+              <li>
                 <p className="font-semibold text-white">1. Audit express</p>
                 <p className="text-sm text-white/60">Analyse de votre besoin, SEO rapide et priorisation.</p>
-              </div>
-              <div>
+              </li>
+              <li>
                 <p className="font-semibold text-white">2. Prototype & contenu</p>
                 <p className="text-sm text-white/60">Maquette fonctionnelle et messages orientés conversion.</p>
-              </div>
-              <div>
+              </li>
+              <li>
                 <p className="font-semibold text-white">3. Mise en ligne mesurable</p>
                 <p className="text-sm text-white/60">Déploiement, suivi des métriques et itérations.</p>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
         </section>
 
         <section className="space-y-6" aria-labelledby="services">
           <div className="flex items-end justify-between">
             <div>
-              <p className="section-title">Services</p>
+              <p className="section-label">Services</p>
               <h2 id="services" className="text-3xl font-semibold">
                 Services de développeur web freelance à Caen
               </h2>
@@ -198,7 +198,7 @@ export default function Page() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {services.map((service) => (
-              <article key={service.title} className="card p-6 space-y-4">
+              <article key={service.title} className="content-card p-6 space-y-4">
                 <service.icon className="h-6 w-6 text-accent" />
                 <h3 className="text-xl font-semibold">{service.title}</h3>
                 <p className="text-sm text-white/70 leading-relaxed">{service.description}</p>
@@ -207,10 +207,10 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="contact" className="card p-8 space-y-6" aria-labelledby="contact-title">
+        <section id="contact" className="content-card p-8 space-y-6" aria-labelledby="contact-title">
           <div className="flex items-start justify-between gap-4">
             <div className="space-y-3">
-              <p className="section-title">Contact</p>
+              <p className="section-label">Contact</p>
               <h2 id="contact-title" className="text-3xl font-semibold">
                 Parlons de votre projet web à Caen
               </h2>
@@ -222,10 +222,13 @@ export default function Page() {
           </div>
           <form
             className="grid gap-4 md:grid-cols-2"
-            action="mailto:contact@louissimon.dev"
-            method="post"
-            encType="text/plain"
+            action="https://formsubmit.co/contact@louissimon.dev"
+            method="POST"
+            encType="application/x-www-form-urlencoded"
           >
+            <input type="hidden" name="_subject" value="Demande devis site web - Caen" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://www.louis-simon.dev/?sent=1" />
             <label className="md:col-span-1 space-y-2 text-sm text-white/80">
               Nom
               <input
@@ -265,7 +268,7 @@ export default function Page() {
         </section>
       </main>
 
-      <footer className="container-grid py-10 flex flex-col gap-3 border-t border-white/5 text-sm text-white/60">
+      <footer className="layout-container py-10 flex flex-col gap-3 border-t border-white/5 text-sm text-white/60">
         <p>Louis Simon · Développeur web freelance à Caen</p>
         <p>Sites Next.js performants, SEO local et accompagnement de bout en bout.</p>
         <div className="flex gap-4">
