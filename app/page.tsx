@@ -72,7 +72,7 @@ export default function Page() {
         <div className="flex items-center gap-3">
           <div className="relative h-12 w-12 overflow-hidden rounded-full border border-accent/40 bg-accent/10">
             <Image
-              src="/portrait-louis.jpg"
+              src="../portrait-louis.jpg"
               alt="Portrait de Louis Simon, développeur web freelance à Caen"
               fill
               sizes="48px"
